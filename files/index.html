@@ -1,0 +1,131 @@
+<html>
+
+<head>
+  <title>Roast API</title>
+
+
+  <link rel="icon" href="favicon-32x32.png" type="image/png" />
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Roast API - Dom K" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: powderblue;
+    }
+
+    p {
+      font-family: 'Fredoka', sans-serif;
+    }
+
+    h1 {
+      font-family: 'Bungee Shade', cursive;
+    }
+
+    html {
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    .bg {
+      animation: slide 3s ease-in-out infinite alternate;
+      background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+      bottom: 0;
+      left: -50%;
+      opacity: .5;
+      position: fixed;
+      right: -50%;
+      top: 0;
+      z-index: -1;
+    }
+
+    .bg2 {
+      animation-direction: alternate-reverse;
+      animation-duration: 4s;
+    }
+
+    .bg3 {
+      animation-duration: 5s;
+    }
+
+    .content {
+      background-color: rgba(255, 255, 255, .8);
+      border-radius: .25em;
+      box-shadow: 0 0 .25em rgba(0, 0, 0, .25);
+      box-sizing: border-box;
+      left: 50%;
+      padding: 10vmin;
+      position: fixed;
+      text-align: center;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+
+
+    @keyframes slide {
+      0% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(25%);
+      }
+    }
+
+    button {
+      display: inline-block;
+
+      font-size: 20px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #4CAF50;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+      padding: 5px 5px;
+
+    }
+
+    button:active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div class="bg"></div>
+  <div class="bg bg2"></div>
+  <div class="bg bg3"></div>
+  <div class="content">
+    <h1>Hello There!</h1>
+    <p>Welcome to the Roast's API! create your API Key</p>
+    <p> and access the API by reading the Docs!</p>
+    <button style="font-family: 'Fredoka', sans-serif;" onclick="window.location.href='https://github.com/dudeunoob'">Check out my Github! <i class="fa fa-github"
+        style="font-size:36px"></i></button>
+    <button style="font-family: 'Fredoka', sans-serif;" onclick="window.location.href='https://damodar-kamani.gitbook.io/roast-api/'">Click here for docs!<i
+        class="fa fa-github" style="font-size:36px"></i></button>
+
+  </div>
+
+</body>
+
+</html>
